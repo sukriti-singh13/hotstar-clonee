@@ -13,6 +13,13 @@ const Navbar = () => {
         <div className="nav-logo">
           <img src={Logo} alt="logo" />
         </div>
+        <div className="more-options">
+          <p>TV</p>
+          <p>Movies</p>
+          <p>Sports</p>
+          <p>Disney+</p>
+     <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"/>
+        </div>
       </div>
       <div className="right-container">
         <div className="search-box">

@@ -54,11 +54,11 @@ const HeroSection = () => {
         <AnimatePresence initial={false} mode="wait" >
         <motion.div 
          key={currentIndex}
-         initial={{ opacity: 1, x:flowDirection?10:-10}}
+         initial={{ opacity: 0, x:flowDirection?100:-100}}
          animate={{ opacity: 1,x:0 }}
-         exit={{ opacity: 1,x:flowDirection?-10:10 }}
+         exit={{ opacity: 0,x:flowDirection?-100:100 }}
          transition={{
-           opacity: {type:"spring", duration: 0.5 }
+           duration: 0.2
          }}
         className="show-content">
             <div className="description">
@@ -74,8 +74,8 @@ const HeroSection = () => {
         </motion.div>
         </AnimatePresence>
         <div className="prev-next-buttons">
-            <button className="prev" onClick={prevContent}> &lt;</button>
-            <button className="next"  onClick={nextContent}>&gt; </button>
+            <button className="prev" onClick={prevContent}> <i style={{fontSize:"2rem"}} className="fa">&#xf053;</i></button>
+            <button className="next"  onClick={nextContent}><i style={{fontSize:"2rem"}} className="fa">&#xf054;</i> </button>
         </div>
         </div>
       

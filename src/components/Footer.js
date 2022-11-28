@@ -17,7 +17,10 @@ const Footer = () => {
         <div className="social">
             <div className="social-links">
                 <p>Connect with us</p> 
-                <div className="fb-twitter"></div>
+                <div className="fb-twitter">
+                <a href="#" className="fa fa-facebook"></a>
+                <a href="#" className="fa fa-twitter"></a>
+                </div>
             </div>
             <div className="playstore">
                 <p>Disney+ Hotstar App</p>

@@ -1,0 +1,23 @@
+.card-content{
+    .title, .subtitle-one,.subtitle-two{
+        font-size: calc(11px / 1.3);
+        color:#fff;
+        margin-top: 5px;
+        font-weight: 500;
+    }
+    .watch, .playlist{
+        margin-top: 5px;
+        font-size: calc(11px / 1.3);
+        color:#fff;
+        opacity:0.8;
+        .fa{
+            display: inline-block;
+            padding:0;
+            height: 6px;
+            width:6px;
+            font-size: 6px;
+            color:#fff;
+            opacity: 0.8;
+        }
+    }
+}

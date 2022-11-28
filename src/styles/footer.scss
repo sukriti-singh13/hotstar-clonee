@@ -13,6 +13,10 @@
                 font-size: 12px;
                 line-height: 1.8;
                 font-weight: 400;
+                &:hover{
+                    color:#1F80F6;
+                    cursor: pointer;
+                }
             }
         }
         .copyright{
@@ -28,5 +32,102 @@
         color:rgba(255, 255, 255, 0.6);
         font-size: 14px;
         font-weight: 500;
+        .social-links{
+            p{
+                margin-bottom:10px;
+                
+            }
+            .fb-twitter{
+             display: flex;
+             gap:10px;
+            }
+        }
     }
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    color:#fff;
+    background-color: #1f80e0;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+   
+    background: #192133;;
+    color:  #334366;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+   
+    background: #192133;
+    color:  #334366;
+  }
+  @media only screen and (min-width: $tablet) {
+    .footer{
+        background-color:#0c111b;
+        color:#dadada;
+        padding:32px 24px 25px;
+        display: flex;
+        .about-product{
+            max-width: 600px;
+            .tags{
+                display:flex;
+                column-gap:10px;
+                flex-wrap: wrap;
+                p{
+                    padding-top:10px;
+                    margin-bottom:0px;
+                    font-size: 12px;
+                    line-height: 1.8;
+                    font-weight: 400;
+                    &:hover{
+                        color:#1F80F6;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .copyright{
+                padding:11px 0px 20px 0px;
+                font-size: 12px;
+                line-height: 1.8;
+                font-weight: 400;
+
+            }
+        }
+        .social{
+            display: flex;
+            width:100%;
+            justify-content: center;
+            column-gap: 100px;
+            .social-links{
+                p{
+                    margin-bottom:10px;
+                    
+                }
+                .fb-twitter{
+                 display: flex;
+                 gap:10px;
+                }
+            }
+        }
+    }
+   
+  }

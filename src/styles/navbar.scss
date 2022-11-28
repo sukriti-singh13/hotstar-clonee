@@ -1,4 +1,5 @@
 nav {
+  z-index: 999999;
   min-width: 100%;
   background-color: #121926;
   color: $text-color;
@@ -9,6 +10,24 @@ nav {
   position: fixed;
   padding: 0 10px;
 
+  .left-container{
+    .more-options{
+      display: none;
+   
+    }
+    .nav-logo{
+      width: 115px;
+      height: 45px;
+      padding-bottom: 10px;
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+      }
+
+    }
+  }
+
   .left-container,
   .right-container {
     display: flex;
@@ -18,37 +37,7 @@ nav {
   .right-container {
   
     .search-box {
-      position: relative;
-      input {
-        width: 240px;
-        height: 32px;
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-        color: $text-color;
-        font-size: 16px;
-        outline: 0;
-        padding: 0 28px 0 0px;
-        border-radius: 0;
-        background: none;
-        transition: all .5s ease-in-out;
-        &:focus{
-          width: 340px;
-          transition: all .1s ease-in-out;
-        }
-        &::placeholder {
-          font-size: 14px;
-          color: $text-color;
-        }
-      }
-     
-    }
-    img {
-      position: relative;
-      width: 18px;
-      height: 18px;
-      object-fit: cover;
-      margin-top: -3px;
-      right: 28px;
+      display:none;
     }
     .subscribe {
       color: #fff;
@@ -102,5 +91,71 @@ nav {
 @media only screen and (min-width: $tablet) {
   nav {
     padding: 0 50px;
-  }  
+    .left-container{
+      .more-options{
+        display: flex;
+
+        column-gap: 15px;
+        align-items: center;
+        p{
+          font-size: 16px;
+      font-weight: 400;
+      color:rgba(255, 255, 255, 0.8);
+      margin-bottom: 0;
+      cursor: pointer;
+      &:hover{
+        color:#fff;
+      }
+        }
+      }
+      .nav-logo{
+        width: 115px;
+        height: 45px;
+        padding-bottom: 10px;
+        img{
+          width:100%;
+          height:100%;
+          object-fit: cover;
+        }
+  
+      }
+    }
+    .right-container{
+      .search-box {
+       display: block;
+        position: relative;
+        input {
+          width: 240px;
+          height: 32px;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          color: $text-color;
+          font-size: 16px;
+          outline: 0;
+          padding: 0 28px 0 0px;
+          border-radius: 0;
+          background: none;
+          transition: all .5s ease-in-out;
+          &:focus{
+            width: 340px;
+            transition: all .1s ease-in-out;
+          }
+          &::placeholder {
+            font-size: 14px;
+            color: $text-color;
+          }
+        }
+       
+      }
+      img {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+        margin-top: -3px;
+        right: 28px;
+      }
+    }
+  } 
+
 }
