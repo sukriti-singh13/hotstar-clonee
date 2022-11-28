@@ -18,7 +18,7 @@ const Navbar = () => {
           <p>Movies</p>
           <p>Sports</p>
           <p>Disney+</p>
-     <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"/>
+          <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg" />
         </div>
       </div>
       <div className="right-container">

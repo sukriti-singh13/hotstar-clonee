@@ -2,14 +2,26 @@
     background-color: #030b17;
     padding-top:5rem;
     .inner-wrapper{
+        
         .show-content{
             display: flex;
             width:100%;
             height:400px;
+            border-radius: 1rem;
+
             .description{
                 display:none;
             }
             .media{ 
+                position: relative;
+                .gradient-filler{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(to right, #030b17,transparent 70%);
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -45,6 +57,7 @@
                     row-gap:10px;
                     margin-top:5%;
                     margin-left:5%;
+
                     .title{
                         font-weight: 600;
                         font-size: 1.5rem;
