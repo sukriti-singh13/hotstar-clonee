@@ -23,11 +23,28 @@ const HeroSection = () => {
       image: Image2,
     },
     {
-      title: "3rd Stanza",
+      title: "Yeh Rishta Kya kehlata hai",
       subTitle: "Hindi",
       about:
-        "Tale of a poetic romance! Sparks fly between two strangers- a poet and a lifestyle blogger- after they meet at a cafe. ",
-      image: Image1,
+        "After naina agrees to take part in rishi's plan lets see what both of them do next, will naina face consequence or they will be the winners ",
+      image:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4266/1364266-h-470552ba960d",
+    },
+    {
+      title: "Prince",
+      subTitle: "English,comedy",
+      about:
+        "Hilarious film with two characters who will win your heart, a binged worthy movie that you should watch on your weekend",
+      image:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2203/1422203-h-5970d2180871",
+    },
+    {
+      title: "MS Dhoni :The untold Story",
+      subTitle: "Hindi ,Inspirational",
+      about:
+        "A tell-all tale about the life and times of Indian cricketer Mahendra Singh Dhoni, mapping his journey from a ticket collector to a celebrated sportsman.",
+      image:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9225/1389225-h-d564666bc1d5",
     },
   ];
 

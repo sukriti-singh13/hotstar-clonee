@@ -20,15 +20,15 @@ function App() {
       />
       <HorizontalCardsSlider
         title={"Thanksgiving Specials"}
-        Data={Data[0].latestMovie}
+        Data={Data[2].thanksGivingSpecial}
       />
       <HorizontalCardsSlider
         title={"Popular Shows"}
-        Data={Data[0].latestMovie}
+        Data={Data[3].popularShow}
       />
       <HorizontalCardsSlider
         title={"Movies Recommended For You"}
-        Data={Data[0].latestMovie}
+        Data={Data[4].recommended}
       />
       <Footer />
     </div>
