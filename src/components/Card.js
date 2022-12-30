@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Card = ({ imgUrl, isLive }) => {
+const Card = ({ imgUrl, isLive, id }) => {
+  let navigate = useNavigate();
+  const videoScreen = (id) => {
+    if (isLive) {
+      navigate(`/video/${id}`);
+    }
+  };
   return (
     <div
       className="card-wrapper"
@@ -8,6 +15,7 @@ const Card = ({ imgUrl, isLive }) => {
         aspectRatio: isLive ? "2/1" : "49/65",
         minWidth: isLive ? "220px" : "169px",
       }}
+      onClick={() => videoScreen(id)}
     >
       <img src={imgUrl} alt="imgUrlNotFound" />
       <div className="card-content-wrapper">

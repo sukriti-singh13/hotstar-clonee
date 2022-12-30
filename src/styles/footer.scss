@@ -44,7 +44,6 @@
   }
 }
 
-/* Style all font awesome icons */
 .fa {
   padding: 20px;
   display: flex;
@@ -57,26 +56,22 @@
   align-items: center;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
   color: #fff;
   background-color: #1f80e0;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-facebook {
   background: #192133;
   color: #334366;
 }
 
-/* Twitter */
 .fa-twitter {
   background: #192133;
   color: #334366;
 }
+
 @media only screen and (min-width: $tablet) {
   .footer {
     background-color: #0c111b;

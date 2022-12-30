@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import { isValidInputTimeValue } from "@testing-library/user-event/dist/utils";
+import React, { useEffect, useRef } from "react";
 import Card from "./Card";
 
-const HorizontalCardsSlider = ({ title, Data, isLive }) => {
+const HorizontalCardsSlider = ({ title, Data, isLive, liveVideo }) => {
   const scrollable = useRef(null);
   const scrollIt = (toRight) => {
     const scrollLength = 1000;
@@ -10,13 +11,15 @@ const HorizontalCardsSlider = ({ title, Data, isLive }) => {
       behavior: "smooth",
     });
   };
-
+  useEffect(() => {
+    console.log(Data);
+  }, []);
   return (
     <div id="HorizontalCardsSlider" className="HorizontalCardsSlider-wrapper">
       <h3>{title}</h3>
       <div className="horzontalcards-wrapper" ref={scrollable}>
         {Data.map((item, index) => {
-          return <Card {...item} isLive={isLive} />;
+          return <Card {...item} isLive={isLive} Data={Data} id={item.id} />;
         })}
       </div>
 

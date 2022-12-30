@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image1 from "../assets/hero-img1.webp";
 import Image2 from "../assets/hero-img2.webp";
 import { motion, AnimatePresence } from "framer-motion";
@@ -64,6 +64,13 @@ const HeroSection = () => {
     }
     setflowDirection(true);
   };
+  useEffect(() => {
+    const nextContentInterval = setInterval(() => {
+      nextContent();
+    }, 10000);
+    return () => clearInterval(nextContentInterval);
+  });
+
   return (
     <div className="hero-section-wrapper">
       <div className="inner-wrapper">
