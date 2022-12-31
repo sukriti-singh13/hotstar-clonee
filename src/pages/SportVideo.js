@@ -11,6 +11,7 @@ const SportVideo = () => {
       <Navbar />
       <div className="video">
         <iframe
+          title={`${Data[1].isLive[id].title}`}
           width="100%"
           height="630"
           src={Data[1].isLive[id].video}
